@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autora" content="Maria Eduarda da Nóbrega">
+    <title>Resumo de CSS</title>
+    <style>
+
+        /* Comentando no meu código...* /
+        /* Para estilizar, chamamos uma classe e montamos essa estrutura: * /
+        /* É melhor estilizar criando um arquivo CSS por fora e lincar no HTML! */
+
+        .titulo1 {
+            background-color: cadetblue;
+            color: white;
+            text-align: center;
+            border-radius: 10px;
+        }
+
+        .style1 {
+            background-color: lightcyan;
+            border-radius: 10px;
+        }
+
+        .elemento1, .elemento2 {
+            background-color: lightcyan;
+        }
+
+        .container {
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px; height: 200px; border: 4px solid w;
+            border-radius: 20px;
+        }
+
+        .ossimpsons{
+            text-align: center;
+        }
+
+        .margens {
+            background-color: lightcyan;
+            border-radius: 10px;
+        }
+
+        .title1, .title2 {
+            color: cadetblue;
+        }
+
+        body {
+            background-image: url(https://rovinceramics.com/cdn/shop/products/Mason6302_copy_500x500.jpg?v=1594240024);
+        }
+
+        .legenda, .escrita1, .escrita2, .escrita3{
+            color: white;
+            border-radius: 10px;        }
+
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+    <main class="container">
+
+        <!-- Criamos uma classe dentro da tag, e é o nome da classe que chamamos no CSS -->
+        <h2 class="titulo1">O CSS é uma linguagem de formatação e estilização.</h2>
+        <hr>
+        <p class="escrita1">É uma linguagem de folha de estilo em cascata.</p>
+        <p class="escrita2">É uma linguagem que define a aparência de um documento HTML.</p>
+
+        <p class="title1"> Regras de estilização:</p>
+ 
+            <ul class="style1">
+                <li>Seletores</li>
+                <li>Corpo</li>
+                <li>Propriedade
+                    <ul>
+                        <li>Valor</li>
+                    </ul>
+                </li>
+            </ul>
+
+        <p class="elemento1"> elemento { <br>
+            propriedade: valor; <br>
+        }
+        </p>
+
+        <hr>
+
+        <p class="escrita3"> Ou... </p>
+
+        <p class="elemento2">seletor1, seletor2 { <br>
+            propriedade: valor; <br>
+        }
+        </p>
+
+        <hr>
+
+
+        <figure class="ossimpsons">
+        <img class="img" src="https://br.web.img3.acsta.net/c_310_420/medias/nmedia/18/79/96/51/19694367.jpg" alt="Os simpsons">
+        <figcaption class="legenda">Os Simpsons</figcaption>
+        </figure>
+
+        <hr>
+
+        <p class="title2">Propriedades de áreas e margens: </p>
+
+        <ul class="margens">
+            <li>margin-left</li>
+            <li>margin-right</li>
+            <li>margin-bottom</li>
+            <li>margin-top</li>
+            <li>margin</li>
+
+        </ul>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
