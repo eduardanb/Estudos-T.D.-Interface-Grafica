@@ -17,8 +17,9 @@ header {
 body {
     text-align: center;
     background-image: url(https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3k0bzVkb3JrM3R3M2pwaTh1NWhkMGtkZG5ubGd6dHd0OHA0dHRnZCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/WDoKnZsZrFYw8/giphy.gif);
-    background-size: cover; /* Ajusta a imagem para cobrir todo o fundo */
-    background-position: center; /* Centraliza a imagem no fundo */
+    background-size: cover;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
 }
 
 .container {
@@ -27,26 +28,96 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: -70px;
+    margin-top: 100px;
 }
 
 form {
     background-color: rgba(2, 31, 75, 0.8);
     color: white;
-    padding: 20px;
+    padding: 15px 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 80%;
-    max-width: 600px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 500px;
+    font-size: 14px;
 }
 
 h1 {
-    color: white;
-    margin-bottom: 20px;
-    margin-top: 30px;
+    color: #fff;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 p {
     margin-bottom: 10px;
+    color: #f0f0f0;
+    font-size: 14px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: 8px;
+    accent-color: #ff9a8b;
+}
+
+button {
+    background-color: #ff9a8b;
     color: white;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff647c;
+}
+
+select {
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+input[type="radio"]:checked {
+    accent-color: #ff9a8b;
+}
+
+input[type="checkbox"]:checked {
+    accent-color: #ff9a8b;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-top: 6px;
+    margin-bottom: 6px;
 }
